@@ -1,0 +1,110 @@
+header {
+  margin: auto;
+  width: 90%;
+  border: 5px solid green;
+  padding: 10px;
+  text-align: center;
+  font-family: "Monaco", monospace;
+  color: white;
+}
+#wordInput {
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  font-family: "Monaco", monospace;
+  float: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  border: 5px solid black;
+  box-shadow: inset 0 0 10px black;
+  color: white;
+  margin-bottom: 10%;
+  background-color: #5a5b5c;
+}
+.parent {
+  background-color: #5a5b5c;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Monaco", monospace;
+  float: right;
+  margin-top: 9.3%;
+  margin-right: 10%;
+  border: 5px solid black;
+  box-shadow: inset 0 0 10px black;
+  color: white;
+  padding: 2rem 2rem;
+  width: 50%;
+}
+.child {
+  display: inline-block;
+  vertical-align: middle;
+  width: 29%;
+}
+button {
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color:rgb(75, 134, 111);
+  color: white;
+  font-family: "Monaco", monospace;
+}
+body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #3a3b3c;
+  }
+  section{
+  height:100%;
+  width:100%;
+    position:absolute ;  background:radial-gradient(#333,#000);
+  }
+  #overlayHarry {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: white;
+    text-align: center;
+    font-size: x-large;
+  }
+  #overlayDanielle {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: white;
+    text-align: center;
+    font-size: x-large;
+  }
+  #overlayDraw {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    color: white;
+    text-align: center;
+    font-size: x-large;
+  }

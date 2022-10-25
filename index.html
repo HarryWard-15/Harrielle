@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Word Matcher</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <main>
+            <script src="assets/app.js"></script>
+            <div id="box">
+                <div id="wordInput">
+                    <h2 id="title">Enter Your Secret Passphrases</h2>
+                    <lable id="harryWord">Harry's Word</lable><br />
+                    <input type="password" id="harryPassword" name="password"><br /><br />
+                    <lable id="danielleWord">Danielle's Word</lable><br />
+                    <input type="password" id="daniellePassword" name="password"><br />
+                    <br/>
+                    <button onclick="assignWord()" id="button">Submit Words</button>
+                </div>   
+                <div class="parent">
+                    <h2>Guess The Others Secret Passphrases</h2>
+                    <div class="child">
+                        <div id="readOnlyInput">
+                            <lable for="harryHint">Harry's Hint</lable><br />
+                            <input type="text" id="harryHint" name="text" readonly style="background-color: grey;"><br /><br/>
+                            <lable for="danielleWord">Danielle's Hint</lable><br />
+                            <input type="text" id="danielleHint" name="text" readonly style="background-color: grey;"><br /><br/><br/><br/>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <lable for="harryWord">Harry's Guess</lable><br />
+                        <input type="text" id="harryGuess" name="text"><br /><br />
+                        <lable for="danielleHint">Danielle's Guess</lable><br />
+                        <input type="text" id="danielleGuess" name="text"><br />
+                        <br/>
+                        <button onclick="markGuess()" id="button1">Submit Guess</button>
+                    </div>
+                    <div class="child">
+                        <div id="readOnlyInput">
+                            <label for="harryLastGuess">Harry's Last Guess</label><br/>                     
+                            <input type="text" id="harryLastGuess" name="text" readonly style="background-color: grey;"><br /><br/>
+                            <label for="danielleLastGuess">Danielle's Last Guess</label><br/>
+                            <input type="text" id="danielleLastGuess" name="text" readonly style="background-color: grey;"><br /><br/><br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="overlayHarry">
+                <h1>Game Over!</h1>
+                <h2>Harry Wins</h2>
+                <button onclick=location.reload()>Restart</button>
+            </div>  
+            <div id="overlayDanielle">
+                <h1>Game Over!</h1>
+                <h2>Danielle Wins!</h2>
+                <button onclick=location.reload()>Restart</button>
+            </div>  
+            <div id="overlayDraw">
+                <h1>Game Over!</h1>
+                <h2>Its a Draw!</h2>
+                <button onclick=location.reload()>Restart</button>
+            </div>  
+        </main>
+    </body>
+</html>
